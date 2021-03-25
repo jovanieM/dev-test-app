@@ -44,14 +44,14 @@
 		11B229CD260BFDCF0082A86F /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		11B229D2260C27640082A86F /* HomeViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Delegate.swift"; sourceTree = "<group>"; };
 		11B229D7260C28490082A86F /* HomeViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+DataSource.swift"; sourceTree = "<group>"; };
-		11B29F2B260807B5001D94C4 /* DevTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = DevTestApp.app; path = "/Users/jmolas/Desktop/DevTestApp/build/Debug-iphoneos/DevTestApp.app"; sourceTree = "<absolute>"; };
+		11B229F3260C745A0082A86F /* DevTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = DevTestApp.app; path = "/Users/jmolas/Desktop/DevTestApp/build/Debug-iphoneos/DevTestApp.app"; sourceTree = "<absolute>"; };
+		11B229F4260C745A0082A86F /* DevTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DevTestAppTests.xctest; path = "/Users/jmolas/Desktop/DevTestApp/build/Debug-iphoneos/DevTestAppTests.xctest"; sourceTree = "<absolute>"; };
+		11B229F5260C745A0082A86F /* DevTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DevTestAppUITests.xctest; path = "/Users/jmolas/Desktop/DevTestApp/build/Debug-iphoneos/DevTestAppUITests.xctest"; sourceTree = "<absolute>"; };
 		11B29F2E260807B6001D94C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11B29F30260807B6001D94C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		11B29F32260807B6001D94C4 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		11B29F37260807B6001D94C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11B29F3C260807B6001D94C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		11B29F41260807B7001D94C4 /* DevTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DevTestAppTests.xctest; path = "/Users/jmolas/Desktop/DevTestApp/build/Debug-iphoneos/DevTestAppTests.xctest"; sourceTree = "<absolute>"; };
-		11B29F4C260807B7001D94C4 /* DevTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DevTestAppUITests.xctest; path = "/Users/jmolas/Desktop/DevTestApp/build/Debug-iphoneos/DevTestAppUITests.xctest"; sourceTree = "<absolute>"; };
 		11B29F9626081BD7001D94C4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		11CC3FA3260967FE00EC57D1 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		11CC3FB026099D4400EC57D1 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 			);
 			name = DevTestApp;
 			productName = DevTestApp;
-			productReference = 11B29F2B260807B5001D94C4 /* DevTestApp.app */;
+			productReference = 11B229F3260C745A0082A86F /* DevTestApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		11B29F40260807B7001D94C4 /* DevTestAppTests */ = {
@@ -144,7 +144,7 @@
 			);
 			name = DevTestAppTests;
 			productName = DevTestAppTests;
-			productReference = 11B29F41260807B7001D94C4 /* DevTestAppTests.xctest */;
+			productReference = 11B229F4260C745A0082A86F /* DevTestAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		11B29F4B260807B7001D94C4 /* DevTestAppUITests */ = {
@@ -162,7 +162,7 @@
 			);
 			name = DevTestAppUITests;
 			productName = DevTestAppUITests;
-			productReference = 11B29F4C260807B7001D94C4 /* DevTestAppUITests.xctest */;
+			productReference = 11B229F5260C745A0082A86F /* DevTestAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
