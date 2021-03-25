@@ -20,12 +20,12 @@ class ProductDetailViewController: UIViewController {
     var productDetails: ProductDetails? {
         didSet {
             nameLabel.text = productDetails?.name
-            modelLabel.text = "Model: \(String(describing: productDetails?.sku))"
+            modelLabel.text = "Model: \(String(describing: productDetails!.sku))"
             let priceFormat = NumberFormatter()
             priceFormat.locale = Locale.init(identifier: "ja_JP")
             priceFormat.numberStyle = .currency
-            let price = priceFormat.string(from: NSNumber(value: productDetails?.price ?? 0))
-            priceLabel.text = "Price: \(String(describing: price))"
+            let price = priceFormat.string(from: NSNumber(value: productDetails!.price))
+            priceLabel.text = "Price: \(price!))"
             stockStatus.text = productDetails?.extension_attributes.stock_item.is_in_stock ?? false ? "in stock" : "out of stock"
         }
     }
