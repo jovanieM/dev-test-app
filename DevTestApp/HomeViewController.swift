@@ -27,7 +27,7 @@ class HomeViewController: UITableViewController {
     }()
 
     var products = [Product]() {
-        willSet {
+        willSet {// disable buttons while fetching data
             let notEmpty = !newValue.isEmpty
             DispatchQueue.main.async {
                 self.reloadButton.isEnabled = notEmpty
@@ -99,6 +99,6 @@ class HomeViewController: UITableViewController {
 
 extension HomeViewController: ProductDetailDelegate {
     func completionHandler(index: Int) {
-        tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .none)
+        tableView.reloadData()
     }
 }

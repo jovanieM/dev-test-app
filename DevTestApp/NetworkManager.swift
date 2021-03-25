@@ -19,7 +19,6 @@ class NetworkManager {
     
     let session: URLSession
     
-//    var downloadedImages: [String: Data] = [:]
     private var downloadedImages = NSCache<NSString, NSData>()
     
     private init() {
@@ -45,7 +44,7 @@ class NetworkManager {
 
         var request = URLRequest(url: comp.url!)
         
-        request.httpMethod = "GET"
+        request.httpMethod = Constants.HTTPRequestMethod.get
         request.setValue("*/*", forHTTPHeaderField: "accept")
         request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
         
@@ -70,7 +69,7 @@ class NetworkManager {
                            "password": "tti2020"]
 
         var request = URLRequest(url: urlComponents(endPath: Constants.APIDetails.tokenPath).url!)
-        request.httpMethod = "POST"
+        request.httpMethod = Constants.HTTPRequestMethod.post
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         guard let httpBody = try? JSONSerialization.data(withJSONObject: credentials,
                                                          options: []) else {return}

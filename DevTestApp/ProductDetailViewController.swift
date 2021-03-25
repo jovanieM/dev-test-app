@@ -20,12 +20,12 @@ class ProductDetailViewController: UIViewController {
     var productDetails: ProductDetails? {
         didSet {
             nameLabel.text = productDetails?.name
-            modelLabel.text = productDetails?.sku
+            modelLabel.text = "Model: \(String(describing: productDetails?.sku))"
             let priceFormat = NumberFormatter()
             priceFormat.locale = Locale.init(identifier: "ja_JP")
             priceFormat.numberStyle = .currency
             let price = priceFormat.string(from: NSNumber(value: productDetails?.price ?? 0))
-            priceLabel.text = price
+            priceLabel.text = "Price: \(String(describing: price))"
             stockStatus.text = productDetails?.extension_attributes.stock_item.is_in_stock ?? false ? "in stock" : "out of stock"
         }
     }
@@ -159,7 +159,7 @@ class ProductDetailViewController: UIViewController {
         NSLayoutConstraint.activate([
             container.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
             container.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
-            container.trailingAnchor.constraint(equalTo: self.self.view.safeAreaLayoutGuide.trailingAnchor, constant: -16),
+            container.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: -16),
             container.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: 16)
         ])
     }
@@ -169,7 +169,7 @@ class ProductDetailViewController: UIViewController {
         NSLayoutConstraint.activate ([
             nameLabel.topAnchor.constraint(equalTo: self.container.topAnchor, constant: 16),
             nameLabel.leadingAnchor.constraint(equalTo: self.container.leadingAnchor),
-            nameLabel.trailingAnchor.constraint(equalTo: self.container.trailingAnchor),
+            nameLabel.trailingAnchor.constraint(equalTo: self.container.trailingAnchor)
         ])
     }
     

@@ -21,6 +21,7 @@ class ProductTableViewCell: UITableViewCell {
         let label = UILabel()
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
+        label.sizeToFit()
         return label
     }()
     
