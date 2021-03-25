@@ -21,7 +21,7 @@ Project is created with:
 * Swift 5.0
 
 ## Setup
-To run this project, clone it to your local machine:
+To run this project, clone the main branch to your local machine:
 * Connect iPhone(internet connected) device to Mac.
 * Open and run the project in XCode
 
