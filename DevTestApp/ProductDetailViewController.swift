@@ -25,7 +25,7 @@ class ProductDetailViewController: UIViewController {
             priceFormat.locale = Locale.init(identifier: "ja_JP")
             priceFormat.numberStyle = .currency
             let price = priceFormat.string(from: NSNumber(value: productDetails!.price))
-            priceLabel.text = "Price: \(price!))"
+            priceLabel.text = "Price: \(price!)"
             stockStatus.text = productDetails?.extension_attributes.stock_item.is_in_stock ?? false ? "in stock" : "out of stock"
         }
     }
